@@ -47,10 +47,9 @@ Sistem ini ditenagai oleh algoritma **Naive Bayes** yang bekerja berdasarkan pri
 
 ## 🛠️ Tech Stack
 
-* **Core Logic:** Python & Scikit-Learn
-* **Algorithm:** Naive Bayes Classifier
-* **Frontend:** React / Tailwind CSS
-* **Deployment:** Vercel / Netlify (Sesuaikan dengan deployment Anda)
+* **Backend:** [Flask](https://flask.palletsprojects.com/) (Python Framework)
+* **Machine Learning:** [Scikit-Learn](https://scikit-learn.org/) (Naive Bayes Classifier)
+* **Frontend:** HTML5, CSS3, dan [Bootstrap 5](https://getbootstrap.com/)
 
 ---
 
