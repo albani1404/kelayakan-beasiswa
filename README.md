@@ -66,7 +66,7 @@ Sistem ini ditenagai oleh algoritma **Naive Bayes** yang bekerja berdasarkan pri
 
 ### 🏠 Beranda
 Sistem dilengkapi dengan antarmuka modern untuk memudahkan navigasi.
-![Beranda BeasiswaNB](image_b758bc.png)
+![Beranda BeasiswaNB](D:\joki\uas_data_mining_256)
 
 ### 📝 Form Input Data
 Pengguna cukup memasukkan data akademis dan organisasi untuk diproses.
