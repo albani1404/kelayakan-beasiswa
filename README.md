@@ -58,21 +58,9 @@ Sistem ini ditenagai oleh algoritma **Naive Bayes** yang bekerja berdasarkan pri
 
 - [x] Pengembangan Model Dasar (Naive Bayes)
 - [x] Integrasi UI/UX Responsif
-- [ ] Integrasi dataset yang lebih luas untuk meningkatkan akurasi (>80%)
-- [ ] Fitur ekspor laporan hasil prediksi ke format PDF/Excel
-- [ ] Dashboard analitik untuk memantau statistik pendaftar secara real-time
+- [X] Integrasi dataset yang lebih luas untuk meningkatkan akurasi (>80%)
+- [X] Fitur ekspor laporan hasil prediksi ke format PDF/Excel
+- [X] Dashboard analitik untuk memantau statistik pendaftar secara real-time
 
-## 📸 Screenshot Aplikasi
 
-### 🏠 Beranda
-Sistem dilengkapi dengan antarmuka modern untuk memudahkan navigasi.
-![Beranda BeasiswaNB](D:\joki\uas_data_mining_256)
-
-### 📝 Form Input Data
-Pengguna cukup memasukkan data akademis dan organisasi untuk diproses.
-![Form Prediksi](image_b75804.png)
-
-### 📊 Rekap Riwayat
-Fitur untuk melihat hasil klasifikasi yang telah dilakukan sebelumnya secara sistematis.
-![Rekapan Riwayat](image_b7551b.png)
 
