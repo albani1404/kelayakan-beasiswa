@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="animate-fade-in">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold"><i class="fas fa-history text-primary"></i> Rekapan Riwayat Prediksi</h2>
+        <a href="/prediksi" class="btn btn-primary">
+            <i class="fas fa-plus me-2"></i> Cek Baru
+        </a>
+    </div>
+
+    <div class="card-glass shadow">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Waktu</th>
+                        <th>IPK</th>
+                        <th>Semester</th>
+                        <th>Penghasilan</th>
+                        <th>Prestasi</th>
+                        <th>Organisasi</th>
+                        <th>Hasil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in rekapan %}
+                    <tr>
+                        <td class="small text-muted">{{ row.Tanggal }}</td>
+                        <td class="fw-bold">{{ row.IPK }}</td>
+                        <td>{{ row.Semester }}</td>
+                        <td>Rp {{ "{:,.0f}".format(row.Penghasilan|float).replace(',', '.') }}</td>
+                        <td>
+                            <span class="badge bg-secondary">Level {{ row.Prestasi }}</span>
+                        </td>
+                        <td>{{ "Ya" if row.Organisasi == '1' else "Tidak" }}</td>
+                        <td>
+                            {% if row.Hasil == 'Diterima' %}
+                            <span class="badge bg-success"><i class="fas fa-check-circle me-1"></i> Diterima</span>
+                            {% else %}
+                            <span class="badge bg-danger"><i class="fas fa-times-circle me-1"></i> Ditolak</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="7" class="text-center py-5 text-muted">Belum ada riwayat pengecekan.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
